@@ -1,0 +1,3 @@
+hard pgfopts
+hard minted
+hard tcolorbox

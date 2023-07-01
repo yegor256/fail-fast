@@ -1,0 +1,10 @@
+\input{regression-test.tex}
+\documentclass{article}
+\usepackage{fail-fast}
+\begin{document}
+
+\START
+
+This reference is absent, the build must fail: \ref{foo}
+
+\END

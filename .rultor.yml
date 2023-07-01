@@ -1,0 +1,19 @@
+docker:
+  image: yegor256/rultor-image:1.15.0
+install: |-
+  sudo gem install texsc:0.6.0
+  sudo gem install texqc:0.6.0
+  sudo tlmgr option repository ctan
+  sudo tlmgr --verify-repo=none update --self
+  sudo tlmgr --verify-repo=none update iexec libertine l3build microtype href-ul pdfcrop docshots pgfopts pgf environ hypdoc mathtools
+merge:
+  script: |-
+    l3build check
+release:
+  script: |-
+    l3build tag ${tag}
+    l3build ctan --show-log-on-error
+    texsc
+    texqc
+    git commit -am "version set to ${tag}"
+    echo 'y' | l3build upload --halt-on-error
