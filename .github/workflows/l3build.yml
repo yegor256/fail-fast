@@ -19,8 +19,7 @@ jobs:
           update-all-packages: true
           package-file: DEPENDS.txt
           packages: scheme-basic xetex libertine l3build microtype href-ul docshots pgfopts environ hypdoc etoolbox
-      - run: l3build ctan --show-log-on-error --halt-on-error || echo fail
-      - run: cat build/doc/fail-fast.log
+      - run: l3build ctan --show-log-on-error --halt-on-error
       - uses: JamesIves/github-pages-deploy-action@v4.4.1
         with:
           branch: gh-pages
