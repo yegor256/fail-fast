@@ -5,7 +5,7 @@ install: |-
   sudo gem install texqc:0.6.0
   sudo tlmgr option repository ctan
   sudo tlmgr --verify-repo=none update --self
-  sudo tlmgr --verify-repo=none update libertine l3build microtype href-ul pdfcrop docshots pgfopts pgf environ hypdoc
+  sudo tlmgr --verify-repo=none update libertine l3build microtype href-ul pdfcrop docshots pgfopts pgf environ hypdoc etoolbox
 merge:
   script: |-
     l3build check
