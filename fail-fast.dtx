@@ -101,6 +101,8 @@
 % \changes{v0.1.0}{2023/07/01}{Initial version, which turns warnings into errors}
 
 %    \begin{macrocode}
+\message{fail-fast: Starting from now all warnings
+  are reported as errors^^J}%
 \renewcommand{\GenericWarning}[2]{%
   \GenericError{#1}{#2}{}{This was a warning, now an error}%
 }
