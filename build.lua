@@ -22,7 +22,7 @@ uploadconfig = {
   summary = "Turns warnings into errors",
   repository = "https://github.com/yegor256/fail-fast",
   support = "",
-  topic = {"tools"}
+  topic = {"compilation"}
 }
 
 function update_tag(file, content, tagname, tagdate)
