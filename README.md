@@ -25,3 +25,5 @@ then run `l3build ctan` in the root directory.
 It should compile everything without errors. If not, submit an issue and wait.
 Otherwise, make your changes and then run `l3build ctan` again. If the build is
 still clean, submit a pull request.
+
+Copyright (c) 2023 Yegor Bugayenko, MIT License
