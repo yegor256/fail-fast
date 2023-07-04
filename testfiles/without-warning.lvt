@@ -1,0 +1,12 @@
+\input{regression-test.tex}
+\documentclass{article}
+\usepackage{fail-fast}
+\begin{document}
+
+\START
+
+This reference is present, the build must NOT fail: \ref{foo}
+
+Here: \label{foo}
+
+\END
