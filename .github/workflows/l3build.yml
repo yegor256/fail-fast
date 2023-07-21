@@ -19,7 +19,7 @@ jobs:
           update-all-packages: true
           packages: scheme-basic xetex libertine l3build microtype href-ul docshots pgfopts environ hypdoc etoolbox
       - run: l3build ctan --show-log-on-error --halt-on-error
-      - uses: JamesIves/github-pages-deploy-action@v4.4.2
+      - uses: JamesIves/github-pages-deploy-action@v4.4.3
         with:
           branch: gh-pages
           folder: build/distrib/tds/tex/latex
