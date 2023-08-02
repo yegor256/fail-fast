@@ -1,0 +1,12 @@
+soft docshots
+soft environ
+soft etoolbox
+soft href-ul
+soft hypdoc
+soft l3build
+soft libertine
+soft microtype
+soft pgfopts
+soft scheme-basic
+soft tools
+soft xetex

@@ -17,7 +17,7 @@ jobs:
       - uses: teatimeguest/setup-texlive-action@v2.6.2
         with:
           update-all-packages: true
-          packages: scheme-basic xetex libertine l3build microtype href-ul docshots pgfopts environ hypdoc etoolbox
+          package-file: DEPENDS.txt
       - run: l3build ctan --show-log-on-error --halt-on-error
       - uses: JamesIves/github-pages-deploy-action@v4.4.3
         with:
