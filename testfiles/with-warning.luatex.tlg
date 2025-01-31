@@ -2,5 +2,5 @@ This is a generated file for the l3build validation system.
 Don't change this file in any respect.
 ! LaTeX Warning: Reference `foo' on page 1 undefined.
 Type  H <return>  for immediate help.
- ...                                              
+ ...
 l. ......nce is absent, the build must fail: \ref{foo}

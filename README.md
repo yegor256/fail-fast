@@ -6,7 +6,7 @@ This LaTeX package helps you make your build more fragile, which is good if you 
 Every warning it will turn into an error and LaTeX engine will fail with a non-zero error message.
 
 First, [install it](https://en.wikibooks.org/wiki/LaTeX/Installing_Extra_Packages)
-from [CTAN](https://ctan.org/pkg/fail-fast) 
+from [CTAN](https://ctan.org/pkg/fail-fast)
 and then use in the preamble:
 
 ```tex
