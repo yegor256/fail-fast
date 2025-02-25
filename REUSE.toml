@@ -21,8 +21,10 @@ path = [
     ".gitleaksignore",
     ".pdd",
     ".xcop",
+    "DEPENDS.txt",
     "Gemfile.lock",
     "README.md",
+    "aspell.en.pws",
     "renovate.json",
 ]
 precedence = "override"
