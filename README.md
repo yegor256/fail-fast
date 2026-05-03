@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/yegor256/fail-fast/blob/master/LICENSE.txt)
 
 This LaTeX package helps you make your build more fragile, which is good if you care about quality.
-Every warning it will turn into an error and LaTeX engine will fail with a non-zero error message.
+It will turn every warning into an error and the LaTeX engine will fail with a non-zero exit code.
 
 First, [install it](https://en.wikibooks.org/wiki/LaTeX/Installing_Extra_Packages)
 from [CTAN](https://ctan.org/pkg/fail-fast)
@@ -14,7 +14,6 @@ and then use in the preamble:
 \usepackage{fail-fast}
 \begin{document}
 This reference is broken: \ref{foo}
-\end{fail-fast}
 \end{document}
 ```
 
