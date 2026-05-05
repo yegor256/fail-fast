@@ -60,19 +60,20 @@
 %
 % \section{Introduction}
 %
-% This package, when included, turns warnings into errors, thus making the build more fragile. This
-% may be a good practice if you care about the quality of your documents and want to keep
-% the quality high, not losing it between changes:
+% Once included, this package promotes \LaTeX{} warnings to errors, thereby rendering the build
+% more fragile by design. Such strictness constitutes a desirable practice whenever document
+% quality is to be preserved with rigour and protected from regressions introduced by subsequent
+% modifications:
 % \begin{docshot}
 % \documentclass{article}
 % \usepackage{fail-fast}
 % \pagestyle{empty}
 % \begin{document}
-% Here goes your content.
+% The document content goes here.
 % \end{document}
 % \end{docshot}
 
-% The development of this package was motivated by this
+% The development of this package was motivated by a
 % \href{https://stackoverflow.com/questions/3244908}{Stack Overflow question}.
 
 % \StopEventually{}
