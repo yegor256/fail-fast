@@ -4,6 +4,7 @@ soft etoolbox
 soft href-ul
 soft hypdoc
 soft l3build
+soft lmodern
 soft microtype
 soft pgfopts
 soft scheme-basic
