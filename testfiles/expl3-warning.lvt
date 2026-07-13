@@ -1,0 +1,16 @@
+% SPDX-FileCopyrightText: Copyright (c) 2023-2026 Yegor Bugayenko
+% SPDX-License-Identifier: MIT
+
+\input{regression-test.tex}
+\documentclass{article}
+\usepackage{fail-fast}
+\begin{document}
+
+\START
+
+\ExplSyntaxOn
+\msg_new:nnn { fail-fast } { boom } { This~expl3~warning~must~fail~the~build }
+\msg_warning:nn { fail-fast } { boom }
+\ExplSyntaxOff
+
+\END
