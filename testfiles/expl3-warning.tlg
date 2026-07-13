@@ -1,0 +1,9 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+! Package fail-fast Error: This expl3 warning must fail the build
+Type <return> to continue.
+ ...                                              
+l. ...\msg_warning:nn { fail-fast } { boom }
+LaTeX does not know anything more about this error, sorry.
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.

@@ -1,6 +1,6 @@
 This is a generated file for the l3build validation system.
 Don't change this file in any respect.
-! LaTeX Warning: Reference `foo' on page 1 undefined.
-Type  H <return>  for immediate help.
+! Package fail-fast Error: This expl3 warning must fail the build
+Type <return> to continue.
  ...                                              
-l. ......ce is absent, the build must fail: \ref{foo}
+l. ...\msg_warning:nn { fail-fast } { boom }

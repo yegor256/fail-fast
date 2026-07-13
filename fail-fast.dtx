@@ -82,7 +82,10 @@
 % \section{Implementation}
 % \changes{v0.0.1}{2023/07/01}{Initial version, which turns warnings into errors}
 % \changes{v0.0.2}{2023/07/04}{Minor changes in the documentation}
+% \changes{v0.0.3}{2026/07/13}{Promote expl3 warnings to errors too}
 
+% Classic \LaTeXe{} warnings travel through |\GenericWarning|, so the package
+% reroutes them to |\GenericError|:
 %    \begin{macrocode}
 \message{fail-fast: Starting from now all warnings
   are reported as errors^^J}%
@@ -90,6 +93,19 @@
   \GenericError{#1}{#2}{}{This was a warning, now an error}%
 }
 %    \end{macrocode}
+
+% A growing share of \LaTeX{} rides on expl3, whose warnings from
+% |\msg_warning:nn| and its siblings never touch |\GenericWarning|. Redirecting
+% the whole |warning| class to |error| catches every variant at once:
+%    \begin{macrocode}
+\ExplSyntaxOn
+\msg_redirect_class:nn { warning } { error }
+\ExplSyntaxOff
+%    \end{macrocode}
+
+% One family of warnings resists promotion: Overfull and Underfull |\hbox| and
+% |\vbox| reports come straight from the \TeX{} box packer, expose no macro
+% hook, and therefore remain warnings.
 
 % \Finale
 
