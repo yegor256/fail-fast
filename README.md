@@ -1,9 +1,13 @@
+# fail-fast
+
 [![make](https://github.com/yegor256/fail-fast/actions/workflows/l3build.yml/badge.svg)](https://github.com/yegor256/fail-fast/actions/workflows/l3build.yml)
 [![CTAN](https://img.shields.io/ctan/v/fail-fast)](https://ctan.org/pkg/fail-fast)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/yegor256/fail-fast/blob/master/LICENSE.txt)
 
-This LaTeX package helps you make your build more fragile, which is good if you care about quality.
-It will turn every warning into an error and the LaTeX engine will fail with a non-zero exit code.
+This LaTeX package helps you make your build more fragile,
+which is good if you care about quality.
+It will turn every warning into an error
+and the LaTeX engine will fail with a non-zero exit code.
 
 First, [install it](https://en.wikibooks.org/wiki/LaTeX/Installing_Extra_Packages)
 from [CTAN](https://ctan.org/pkg/fail-fast)
@@ -17,7 +21,9 @@ This reference is broken: \ref{foo}
 \end{document}
 ```
 
-Otherwise, you can download [`fail-fast.sty`](https://raw.githubusercontent.com/yegor256/fail-fast/gh-pages/fail-fast/fail-fast.sty) and add to your project.
+Otherwise, you can download
+[`fail-fast.sty`](https://raw.githubusercontent.com/yegor256/fail-fast/gh-pages/fail-fast/fail-fast.sty)
+and add to your project.
 
 If you want to contribute yourself, make a fork, then create a branch,
 then run `l3build ctan` in the root directory.
